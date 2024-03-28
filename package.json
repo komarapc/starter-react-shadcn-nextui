@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
+    "@nextui-org/react": "^2.2.10",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-aspect-ratio": "^1.0.3",
@@ -49,6 +50,7 @@
     "cmdk": "^0.2.0",
     "date-fns": "^3.3.1",
     "embla-carousel-react": "^8.0.0-rc21",
+    "framer-motion": "^11.0.23",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.3",
     "next-themes": "^0.2.1",
