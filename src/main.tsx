@@ -4,7 +4,7 @@ import React, { Suspense } from "react";
 
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createRouter } from "@tanstack/react-router";
-
+import { NextUIProvider } from "@nextui-org/react";
 // Import the generated route tree
 import { routeTree } from "./routeTree.gen";
 
@@ -20,7 +20,9 @@ declare module "@tanstack/react-router" {
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Suspense fallback={<div>Loading...</div>}>
-      <RouterProvider router={router} />
+      <NextUIProvider>
+        <RouterProvider router={router} />
+      </NextUIProvider>
     </Suspense>
   </React.StrictMode>
 );
