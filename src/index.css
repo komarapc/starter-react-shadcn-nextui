@@ -4,7 +4,7 @@
 @tailwind utilities;
 @layer base {
   :root {
-    --background: 0 0% 98%;
+    --background: 0 0% 96%;
     --foreground: 240 10% 3.9%;
 
     --card: 0 0% 100%;
@@ -41,14 +41,16 @@
   }
 
   .dark {
-    --background: 20 14.3% 4.1%;
-    --foreground: 0 0% 95%;
-    --card: 24 9.8% 10%;
-    --card-foreground: 0 0% 95%;
-    --popover: 0 0% 9%;
+    --background: 0 0% 6%;
+    --foreground: 0 0% 90%;
+
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 90%;
+
+    --popover: 0 0% 18%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 258 90% 66%;
+    --primary: 262 83% 58%;
     --primary-foreground: 251 91% 95%;
 
     --secondary: 240 3.7% 15.9%;
@@ -60,8 +62,8 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
     --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 142.4 71.8% 29.2%;
+    --input: 0 0% 30%;
+    --ring: 258 90% 66%;
 
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
