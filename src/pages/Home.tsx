@@ -1,24 +1,32 @@
-import { cn } from "@/lib/utils";
-import { Card, CardBody, CardHeader, Divider } from "@nextui-org/react";
-
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardTitle,
+  CardHeader,
+} from "@/components/ui/card";
 const Home = () => {
   return (
-    <>
-      <div className="p-10">
-        <Card className={cn(" bg-card text-card-foreground w-96")}>
+    <div className="w-full min-h-screen  bg-background font-inter">
+      <div className="p-10 space-y-8">
+        <Card className="w-96">
           <CardHeader>
-            <h1 className="text-lg font-semibold">Home</h1>
+            <CardTitle>Hello world</CardTitle>
+            <CardDescription>
+              Welcome to the Next.js starter template with Tailwind CSS and
+              NextUI.
+            </CardDescription>
           </CardHeader>
-          <Divider />
-          <CardBody>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </CardBody>
+          <CardContent>
+            Amet ut officia duis commodo mollit. Elit esse voluptate velit
+            eiusmod ipsum ex esse amet aute commodo Lorem aute. Consequat aute
+            sint officia occaecat adipisicing mollit ex cupidatat in officia
+            quis enim veniam. Ex nisi incididunt non ad ipsum aute anim occaecat
+            officia.
+          </CardContent>
         </Card>
       </div>
-    </>
+    </div>
   );
 };
 export default Home;
