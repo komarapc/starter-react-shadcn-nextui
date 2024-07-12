@@ -5,9 +5,17 @@ import {
   CardTitle,
   CardHeader,
 } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
+import useLayoutStore from "@/state/layout";
 const Home = () => {
+  const { darkMode, toggleDarkMode } = useLayoutStore();
   return (
-    <div className="w-full min-h-screen  bg-background font-inter">
+    <div
+      className={cn(
+        "w-full min-h-screen bg-background font-inter",
+        darkMode && "dark"
+      )}
+    >
       <div className="p-10 space-y-8">
         <Card className="w-96">
           <CardHeader>
